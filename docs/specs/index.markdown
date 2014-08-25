@@ -7,9 +7,9 @@ title: Specifications
 
 #### Client Library Specifications
 
-* [AeroGear JS 1.5.1](aerogear-js)
+* [AeroGear JS 1.5.2](aerogear-js)
 * [AeroGear iOS 1.6.0](aerogear-ios)
-* [AeroGear-Push iOS 0.9.1](aerogear-ios-push)
+* [AeroGear-Push iOS 1.0.0](aerogear-ios-push)
 * [AeroGear-OTP iOS 1.0.0](aerogear-otp-ios)
 * [AeroGear-Crypto iOS 0.2.3](aerogear-ios-crypto)
 * [AeroGear Android 1.4.0](aerogear-android)
@@ -21,7 +21,7 @@ title: Specifications
 
 #### Push Specifications
 * [AeroGear UnifiedPush RESTful APIs](aerogear-unifiedpush-rest/overview-index.html)
-* [AeroGear UnifiedPush Java Client - Version 0.8.0](aerogear-unifiedpush-java-client)
+* [AeroGear UnifiedPush Java Client - Version 0.9.0](aerogear-unifiedpush-java-client)
 * [AeroGear UnifiedPush Node.js Client](aerogear-unifiedpush-nodejs-client)
 * [AeroGear SimplePush Java Client](aerogear-simplepush-java-client)
 
