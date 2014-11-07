@@ -29,4 +29,4 @@ title: Red Hat JBoss Unified Push Server User Guide
   * [Security Defenses](server-administration/#_security_defenses)
 
 * [Next steps](next)
-  * Contains links to detailed client and server Push tutorials and demos
+  * Contains links to Quickstart demos
