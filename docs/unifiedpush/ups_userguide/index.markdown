@@ -6,10 +6,10 @@ title: Red Hat JBoss Unified Push Server User Guide
 # Red Hat JBoss Unified Push Server User Guide
 
 * [Overview](overview)
-  * [About the Red Hat JBoss Unified Push Server](overview#_about_the_unifiedpush_server)
+  * [About Red Hat JBoss Unified Push Server](overview#_about_the_unifiedpush_server)
   * [Use-cases and scenarios](overview#_use_cases_and_scenarios)
   * [Useful Terminology](overview#_useful_terminology)
-  * [How the UnifiedPush Server Works](overview#_how_the_unifiedpush_server_works)
+  * [How the Red Hat JBoss Unified Push Server Works](overview#_how_the_unifiedpush_server_works)
 * [Using the Admin UI](admin-ui)
   * [Admin and Developer accounts](admin-ui/#_admin_and_developer_accounts)
   * [Login and landing page](admin-ui/#_login_and_landing_page)
@@ -20,7 +20,7 @@ title: Red Hat JBoss Unified Push Server User Guide
   * [Sending a Push Notification](admin-ui/#_sending_a_push_notification)
     * [Sending a Push Notification from code](admin-ui/#_sending_a_push_notification_from_code)
   * [Dashboard](admin-ui/#_dashboard)
-* [Administration of the Red Hat JBoss Unified Push Server](server-administration)
+* [Administration of Red Hat JBoss Unified Push Server](server-administration)
   * [Login and Settings](server-administration/#_login_and_settings)
   * [User Management](server-administration/#_user_management)
     * [Enabling the default developer account](server-administration/#_enabling_the_default_developer_account)
