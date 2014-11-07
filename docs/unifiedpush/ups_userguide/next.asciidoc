@@ -1,6 +1,6 @@
 ---
 layout: basic
-title: UnifiedPush Server - Next steps
+title: Red Hat JBoss Unified Push Server - Next steps
 ---
 :toc:
 toc::[]
@@ -8,7 +8,7 @@ toc::[]
 Next steps
 ----------
 
-Now that you are familiar with the UnifiedPush Server it is time to checkout out our tutorials to get Push Notification working with our mobile clients and existing backends!
+Now that you are familiar with the Red Hat JBoss Unified Push Server it is time to checkout out our tutorials to get Push Notification working with our mobile clients and existing backends!
 
 Client Integration Tutorials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

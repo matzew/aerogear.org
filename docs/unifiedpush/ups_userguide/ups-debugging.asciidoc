@@ -1,30 +1,30 @@
 ---
 layout: basic
-title: UnifiedPush Server - Installation and configuration
+title: Red Hat JBoss Unified Push Server - Installation and configuration
 ---
 :toc:
 toc::[]
 
-Debugging the UnifiedPush Server
----------------------------------
+Debugging the Red Hat JBoss Unified Push Server
+-----------------------------------------------
 
-There are several ways to learn more about _"What's going on"_ inside the UnifiedPush Server
+There are several ways to learn more about _"What's going on"_ inside the Red Hat JBoss Unified Push Server
 
 Enable Logging
 ~~~~~~~~~~~~~~
 
-The UnifiedPush Server internally uses +java.util.logging+ as its logging framework.
+The Red Hat JBoss Unified Push Server internally uses +java.util.logging+ as its logging framework.
 
 
-WildFly and JBoss AS
-^^^^^^^^^^^^^^^^^^^^
+EAP on Openshift
+^^^^^^^^^^^^^^^^
 
-There are different ways to enable detailed logging for the UnifiedPush Server in WildFly and JBoss AS.
+There are different ways to enable detailed logging for the Red Hat JBoss Unified Push Server in Openshift.
 
 Using jboss-cli tool
 ++++++++++++++++++++
 
-The most convenient way to enable logging on a running server is using the +jboss-cli.sh+ (+jboss-cli.bat+ on Windows) tool. Once the server is running, launch the tool:
+The most convenient way to enable logging on a running server is using the +jboss-cli.sh+ tool. Once the server is running, launch the tool:
 
 [source,shell]
 ----
@@ -35,9 +35,9 @@ Once connected to the server, paste in the following two commands, one by one:
 
 [source,shell]
 ----
-/subsystem=logging/console-handler=AEROGEAR:add(formatter="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n",autoflush=true)
+/subsystem=logging/console-handler=UNIFIEDPUSH:add(formatter="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n",autoflush=true)
 
-/subsystem=logging/logger=org.jboss.aerogear.unifiedpush:add(level=FINEST,use-parent-handlers=false,handlers=["AEROGEAR"])
+/subsystem=logging/logger=org.jboss.aerogear.unifiedpush:add(level=FINEST,use-parent-handlers=false,handlers=["UNIFIEDPUSH"])
 ----
 
 After each line you should notice a statement that your configuration was successful:
@@ -58,7 +58,7 @@ Inside of the +<subsystem>+ element of the _logging_ subsystem you simply need t
 
 [source,xml]
 ----
-<console-handler name="AEROGEAR">
+<console-handler name="UNIFIEDPUSH">
     <formatter>
         <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
     </formatter>
@@ -66,7 +66,7 @@ Inside of the +<subsystem>+ element of the _logging_ subsystem you simply need t
 <logger category="org.jboss.aerogear.unifiedpush" use-parent-handlers="false">
     <level name="FINEST"/>
     <handlers>
-        <handler name="AEROGEAR"/>
+        <handler name="UNIFIEDPUSH"/>
     </handlers>
 </logger>
 ----
@@ -76,7 +76,7 @@ Once done save the file and restart the server.
 Test the enabled logging
 ++++++++++++++++++++++++
 
-At this point all log levels from the UnifiedPush Server are enabled. To verify this, you can send a Push Notification from the Admin Console. The console should print a message like:
+At this point all log levels from the Red Hat JBoss Unified Push Server are enabled. To verify this, you can send a Push Notification from the Admin Console. The console should print a message like:
 
 [source,shell]
 ----

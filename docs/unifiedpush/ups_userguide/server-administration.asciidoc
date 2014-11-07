@@ -1,20 +1,20 @@
 ---
 layout: basic
-title: UnifiedPush Server - Administration of the UnifiedPush Server
+title: Red Hat JBoss Unified Push Server - Administration of the Red Hat JBoss Unified Push Server
 ---
 :toc:
 toc::[]
 
 
-Administration of the UnifiedPush Server
-----------------------------------------
+Administration of the Red Hat JBoss Unified Push Server
+-------------------------------------------------------
 
-The UnifiedPush Server is protected by the link:http://keycloak.org[Keycloak SSO server]. This document explains a few features from the **Keycloak Admin Console** to perform some administrative configurations around the UnifiedPush Server and its users.
+The Red Hat JBoss Unified Push Server is protected by the link:http://keycloak.org[Keycloak SSO server]. This document explains a few features from the **Keycloak Admin Console** to perform some administrative configurations around the Red Hat JBoss Unified Push Server and its users.
 
 Login and Settings
 ~~~~~~~~~~~~~~~~~~
 
-After exploring the UnifiedPush Server's AdminUI it is time to become familiar with the _Keycloak Admin Console_, which is located at:
+After exploring the Red Hat JBoss Unified Push Server's AdminUI it is time to become familiar with the _Keycloak Admin Console_, which is located at:
 
 +http(s)://SERVER:PORT/auth/admin/aerogear/console/index.html+
 
@@ -22,18 +22,18 @@ After a successful login, using your admin account, you see an overview of gener
 
 image::./img/kc/LandingPage_KC_Admin.png[General Settings]
 
-WARNING: Do _**not**_ disable, rename or even delete the +aerogear+ realm. This will make the UnifiedPush Server _unusable_.
+WARNING: Do _**not**_ disable, rename or even delete the +aerogear+ realm. This will make the Red Hat JBoss Unified Push Server _unusable_.
 
 Besides the general overview, the _Keycloak Admin Console_ offers various configuration settings, such as _Login_, _Roles_, _Default Roles_, _Credentials_, _Keys_, _Email_, _Themes_ or
 _Cache Config_.
 
-NOTE: In this guide we cover only those that are relevant for the UnifiedPush Server
+NOTE: In this guide we cover only those that are relevant for the Red Hat JBoss Unified Push Server
 
-For instance, in the _Login Settings_ you can tweak the actual login to the UnifiedPush Server, like enabling a _Remember Me_ checkbox:
+For instance, in the _Login Settings_ you can tweak the actual login to the Red Hat JBoss Unified Push Server, like enabling a _Remember Me_ checkbox:
 
 image::./img/kc/RememberMe_enabling.png[Enable RememberMe]
 
-This will result in a slightly different login screen for the UnifiedPush Server, where a _Remember Me_ checkbox is presented underneath the +password+ field:
+This will result in a slightly different login screen for the Red Hat JBoss Unified Push Server, where a _Remember Me_ checkbox is presented underneath the +password+ field:
 
 image::./img/kc/RememberMe_enabled_UPS.png[Active RememberMe function]
 
@@ -44,7 +44,7 @@ image::./img/kc/EmailSettings.png[Email Server Settings]
 User Management
 ~~~~~~~~~~~~~~~
 
-To manage users for the UnifiedPush Server, you need to go to the +Users+ section of the _Keycloak Admin Console_:
+To manage users for the Red Hat JBoss Unified Push Server, you need to go to the +Users+ section of the _Keycloak Admin Console_:
 
 image::./img/kc/User_overview.png[User Management Overview]
 
@@ -64,7 +64,7 @@ After toggling the +User Enabled+ button to +ON+, click the +Save+ button to act
 Adding new users
 ^^^^^^^^^^^^^^^^
 
-To add new users for the UnifiedPush Server, go back to the +Users+ section of the _Keycloak Admin Console_:
+To add new users for the Red Hat JBoss Unified Push Server, go back to the +Users+ section of the _Keycloak Admin Console_:
 
 image::./img/kc/User_overview.png[User Management Overview]
 
@@ -100,7 +100,7 @@ image::./img/kc/User_role_configured.png[Configured role settings]
 
 NOTE: Using the shuffle component automatically saves the selection!
 
-At this point the new user is able to use the UnifiedPush Server.
+At this point the new user is able to use the Red Hat JBoss Unified Push Server.
 
 In the +Sessions+ option you can monitor the active sessions of a specific user:
 
@@ -111,7 +111,7 @@ This dialog allows you to +logout+ a specific session of the user, or all using 
 Active Sessions
 ~~~~~~~~~~~~~~~
 
-In the +Sessions and Tokens+ section of the _Keycloak Admin Console_ you can monitor all active session against the UnifiedPush Server's realm, as well as providing configurations around access tokens or timeouts.
+In the +Sessions and Tokens+ section of the _Keycloak Admin Console_ you can monitor all active session against the Red Hat JBoss Unified Push Server's realm, as well as providing configurations around access tokens or timeouts.
 
 The +Realm Sessions+ option allows you to perform a logout for _all_ active sessions:
 
@@ -121,7 +121,7 @@ On the +Timeout Settings+ option you can override the default settings for sessi
 
 image::./img/kc/Session_Timeout_Settings.png[Timeout configuration]
 
-NOTE: For security reasons the default timeout values for the UnifiedPush Server are pretty conservative. Becareful when increasing them!
+NOTE: For security reasons the default timeout values for the Red Hat JBoss Unified Push Server are pretty conservative. Becareful when increasing them!
 
 On the +Revocation Policies+ section, you can specify the _Not-before_ revocation policies per realm, application, or user, and _push_ this value to the client adapters that have an admin url set up:
 
@@ -134,14 +134,9 @@ By default +Brute Force Protection+ is disabled. You can enable it by navigating
 
 image::./img/kc/Session_Enable_BruteForce.png[Enable Brute Force]
 
-With _Brute Force Protection_ enabled your UnifiedPush Server gains more security features. The above form gives options to configure different times and options for attempts to perform a login, and how often.
-
-SSL by default
-~~~~~~~~~~~~~~
-
-By default the option "Require SSL" on Keycloak is enabled to make sure that UnifiedPush will run under SSL, except for *localhost* and *Docker* images. If you are deploying UPS on non-SSL environment, an exception like "*request scheme: http ssl required*" is expected.
+With _Brute Force Protection_ enabled your Red Hat JBoss Unified Push Server gains more security features. The above form gives options to configure different times and options for attempts to perform a login, and how often.
 
 Next Steps
 ~~~~~~~~~~
 
-Now that you are familiar with the two admin user interfaces of the UnifiedPush Server, it is time to get some mobile development started! You can find a list of different tutorials and guides link:../next[here].
+Now that you are familiar with the two admin user interfaces of the Red Hat JBoss Unified Push Server, it is time to get some mobile development started! You can find a list of different tutorials and guides link:../next[here].
