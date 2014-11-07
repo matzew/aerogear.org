@@ -10,10 +10,6 @@ title: Red Hat JBoss Unified Push Server User Guide
   * [Use-cases and scenarios](overview#_use_cases_and_scenarios)
   * [Useful Terminology](overview#_useful_terminology)
   * [How the UnifiedPush Server Works](overview#_how_the_unifiedpush_server_works)
-* [Running on OpenShift](openshift)
-  * [Create an instance using OpenShift's Web UI](openshift/#_create_an_instance_using_openshift_s_web_ui)
-  * [Create an instance using OpenShift's command line interface](openshift/#_create_an_instance_using_openshift_s_command_line_interface)
-    * [Documentation on rhc](openshift/#_documentation_on_rhc)
 * [Using the Admin UI](admin-ui)
   * [Admin and Developer accounts](admin-ui/#_admin_and_developer_accounts)
   * [Login and landing page](admin-ui/#_login_and_landing_page)
@@ -31,9 +27,6 @@ title: Red Hat JBoss Unified Push Server User Guide
     * [Adding new users](server-administration/#_adding_new_users)
   * [Active Sessions](server-administration/#_active_sessions)
   * [Security Defenses](server-administration/#_security_defenses)
-* [Debugging the Red Hat JBoss Unified Push Server](ups-debugging)
-  * [Enable Logging](ups-debugging/#_enable_logging)
-  * [Dashboard of the AdminUI](ups-debugging/#_dashboard_of_the_adminui)
 
 * [Next steps](next)
   * Contains links to detailed client and server Push tutorials and demos
