@@ -9,7 +9,7 @@ toc::[]
 Using the Admin UI
 ------------------
 
-The Red Hat JBoss Unified Push Server can be accessed via its RESTful endpoints, as well over the administrative user interface.
+The Red Hat JBoss Unified Push Server can be accessed via its RESTful endpoints, as well as over the administrative user interface.
 
 Admin and Developer accounts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
