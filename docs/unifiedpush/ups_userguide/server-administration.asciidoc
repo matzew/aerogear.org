@@ -9,12 +9,12 @@ toc::[]
 Administration of the Red Hat JBoss Unified Push Server
 -------------------------------------------------------
 
-Red Hat JBoss Unified Push Server is protected by link:http://keycloak.org[Keycloak SSO server]. This document explains few features from the **Keycloak Admin Console** to perform some administrative configurations around Red Hat JBoss Unified Push Server and its users.
+The Red Hat JBoss Unified Push Server is protected by link:http://keycloak.org[Keycloak SSO server]. This document explains few features from the **Keycloak Admin Console** to perform some administrative configurations around the Red Hat JBoss Unified Push Server and its users.
 
 Login and Settings
 ~~~~~~~~~~~~~~~~~~
 
-After exploring Admin UI of Red Hat JBoss Unified Push Server, it is time to become familiar with the _Keycloak Admin Console_, which is located at:
+After exploring Admin UI of the Red Hat JBoss Unified Push Server, it is time to become familiar with the _Keycloak Admin Console_, which is located at:
 
 +http(s)://SERVER:PORT/auth/admin/aerogear/console/index.html+
 
@@ -22,18 +22,18 @@ After being logged in successfully using your admin account, you see an overview
 
 image::./img/kc/LandingPage_KC_Admin.png[General Settings]
 
-WARNING: Do _**not**_ disable, rename or even delete the +aerogear+ realm. This will make Red Hat JBoss Unified Push Server _unusable_.
+WARNING: Do _**not**_ disable, rename or even delete the +aerogear+ realm. This will make the Red Hat JBoss Unified Push Server _unusable_.
 
 Besides the general overview, the _Keycloak Admin Console_ offers various configuration settings, such as _Login_, _Roles_, _Default Roles_, _Credentials_, _Keys_, _Email_, _Themes_ or
 _Cache Config_.
 
 NOTE: In this guide we cover only these that are relevant for the Red Hat JBoss Unified Push Server
 
-For instance, in the _Login Settings_ you can tweak the actual login to Red Hat JBoss Unified Push Server, like enabling a _Remember Me_ checkbox:
+For instance, in the _Login Settings_ you can tweak the actual login to the Red Hat JBoss Unified Push Server, like enabling a _Remember Me_ checkbox:
 
 image::./img/kc/RememberMe_enabling.png[Enable RememberMe]
 
-This will result in a slightly different login screen for Red Hat JBoss Unified Push Server, where a _Remember Me_ checkbox is presented underneath the +password+ field:
+This will result in a slightly different login screen for the Red Hat JBoss Unified Push Server, where a _Remember Me_ checkbox is presented underneath the +password+ field:
 
 image::./img/kc/RememberMe_enabled_UPS.png[Active RememberMe function]
 
@@ -44,7 +44,7 @@ image::./img/kc/EmailSettings.png[Email Server Settings]
 User Management
 ~~~~~~~~~~~~~~~
 
-To manage users for Red Hat JBoss Unified Push Server, you need to go to the +Users+ section of the _Keycloak Admin Console_:
+To manage users for the Red Hat JBoss Unified Push Server, you need to go to the +Users+ section of the _Keycloak Admin Console_:
 
 image::./img/kc/User_overview.png[User Management Overview]
 
@@ -100,7 +100,7 @@ image::./img/kc/User_role_configured.png[Configured role settings]
 
 NOTE: Using the shuffle component automatically saves the selection.
 
-At this point the new user is able to use Red Hat JBoss Unified Push Server.
+At this point the new user is able to use the Red Hat JBoss Unified Push Server.
 
 In the +Sessions+ option you can monitor the active sessions of a specific user:
 
@@ -111,7 +111,7 @@ This dialog allows you to +logout+ a specific session of the user or all session
 Active Sessions
 ~~~~~~~~~~~~~~~
 
-In the +Sessions and Tokens+ section of the _Keycloak Admin Console_ you can monitor all active sessions against Red Hat JBoss Unified Push Server's realm, as well as providing configurations around access tokens or timeouts.
+In the +Sessions and Tokens+ section of the _Keycloak Admin Console_ you can monitor all active sessions against the Red Hat JBoss Unified Push Server's realm, as well as providing configurations around access tokens or timeouts.
 
 The +Realm Sessions+ option allows you to perform a logout for _all_ active sessions:
 
@@ -121,7 +121,7 @@ On the +Timeout Settings+ option you can override the default settings for sessi
 
 image::./img/kc/Session_Timeout_Settings.png[Timeout configuration]
 
-NOTE: For security reasons the default timeout values for Red Hat JBoss Unified Push Server are pretty conservative. Be careful when you are increasing them.
+NOTE: For security reasons the default timeout values for the Red Hat JBoss Unified Push Server are pretty conservative. Be careful when you are increasing them.
 
 On the +Revocation Policies+ section, you can specify the _Not-before_ revocation policies per realm, application, or user, and _push_ this value to the client adapters that have an admin URL set up:
 
@@ -139,4 +139,4 @@ With _Brute Force Protection_ enabled, your Red Hat JBoss Unified Push Server ga
 Next Steps
 ~~~~~~~~~~
 
-Now that you are familiar with the two admin user interfaces of Red Hat JBoss Unified Push Server, it is time to get some mobile development started! You can find a list of different tutorials and guides link:../next[here].
+Now that you are familiar with the two admin user interfaces of the Red Hat JBoss Unified Push Server, it is time to get some mobile development started! You can find a list of different tutorials and guides link:../next[here].

@@ -8,15 +8,15 @@ toc::[]
 Overview
 --------
 
-Red Hat JBoss Unified Push Server is a server that allows sending native push messages to different mobile operating systems. Currently the server supports link:https://developer.apple.com/library/mac/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100-SW9[Apple’s APNs] and link:http://developer.android.com/google/gcm/index.html[Google Cloud Messaging].
+The Red Hat JBoss Unified Push Server is a server that allows sending native push messages to different mobile operating systems. Currently the server supports link:https://developer.apple.com/library/mac/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100-SW9[Apple’s APNs] and link:http://developer.android.com/google/gcm/index.html[Google Cloud Messaging].
 
 About the Red Hat JBoss Unified Push Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Red Hat JBoss Unified Push Server offers an unified Notification Service API to the above mentioned Push Network Services. When a push message request is sent to the Red Hat JBoss Unified Push Server, it is internally translated into the format of these 3rd party networks. This gives a server the ability to send Push Notifications to different mobile platforms. When using the Red Hat JBoss Unified Push Server, please keep in mind that Push Notification is a signalling mechanism and that it is not suitable to be used as a data carrying system (e.g. use in a chat application).
+The Red Hat JBoss Unified Push Server offers an unified Notification Service API to the above mentioned Push Network Services. When a push message request is sent to the Red Hat JBoss Unified Push Server, it is internally translated into the format of these 3rd party networks. This gives a server the ability to send Push Notifications to different mobile platforms. When using the Red Hat JBoss Unified Push Server, please keep in mind that Push Notification is a signalling mechanism and that it is not suitable to be used as a data carrying system (e.g. use in a chat application).
 
 Use-cases and scenarios
 ~~~~~~~~~~~~~~~~~~~~~~~
-Different use-cases and scenarios are supported. Below are a few to give an idea how Red Hat JBoss Unified Push Server can be used:
+Different use-cases and scenarios are supported. Below are a few to give an idea how the Red Hat JBoss Unified Push Server can be used:
 
 * MyWarehouseInc-backend can send _notification messages_ to different groups (e.g. discounts for only iOS (or only Android) users)
 * MyInsuranceCorp-backend can send “notification messages” to different variants of its mobile Applications:
@@ -43,7 +43,7 @@ A variant of the PushApplication, representing a specific mobile platform, like 
 
 Installation
 ^^^^^^^^^^^^
-Represents an actual device, registered with Red Hat JBoss Unified Push Server. User1 running _HR Android_ application, while User2 runs _HR iPhone premium_ application on his phone.
+Represents an actual device, registered with the Red Hat JBoss Unified Push Server. User1 running _HR Android_ application, while User2 runs _HR iPhone premium_ application on his phone.
 
 Push Notification Message
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,14 +56,14 @@ A RESTful API that receives Push Notification Message requests for a PushApplica
 How the Red Hat JBoss Unified Push Server Works
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Red Hat JBoss Unified Push Server can be seen as a _broker_ that distributes push messages to different 3rd party Push Networks. The graphic below gives a little overview:
+The Red Hat JBoss Unified Push Server can be seen as a _broker_ that distributes push messages to different 3rd party Push Networks. The graphic below gives a little overview:
 
 image::./img/aerogear_unified_push_server.png[How it works]
 
 1. One PushApplication and at least one mobile platform variant must be created (link:../admin-ui/#_using_the_admin_ui[see Using the Admin UI]).
-2. The variant credentials that are generated and stored by Red Hat JBoss Unified Push Server must be added to the mobile application source, enabling the application to register with Red Hat JBoss Unified Push Server once it is installed on mobile devices (see link:../next[tutorials]).
+2. The variant credentials that are generated and stored by the Red Hat JBoss Unified Push Server must be added to the mobile application source, enabling the application to register with the Red Hat JBoss Unified Push Server once it is installed on mobile devices (see link:../next[tutorials]).
 3. Sending a push message can happen in different ways: The AdminUI can be used to send a (test) message to registered devices, as explained in link:../admin-ui/#sending_a_push_notification[Sending a Push Notification]. However, in a real-world scenario the Push Notification Message request is triggered from a backend application, which sends its requests using the _Sender API_. Different SDKs for different programmin languages are supported (see link:../admin-ui/#_sending_a_push_notification_from_code[Sending a Push Notification from Code]).
 4. The push request is then translated into platform specific details for the required variant Push Network. The Dashboard of the AdminUI gives a status report if a message is sent to the Push Network, as described in link:../admin-ui/#_dashboard[Dashboard].
-5. Red Hat JBoss Unified Push Server does not directly deliver the message to the mobile device. This is done by the appropriate variant Push Network. __Note__: There can be latency in the actual delivery. Most Push Networks, such as APNs or GCM, do not guarantee the delivery of messages to mobile devices.
+5. The Red Hat JBoss Unified Push Server does not directly deliver the message to the mobile device. This is done by the appropriate variant Push Network. __Note__: There can be latency in the actual delivery. Most Push Networks, such as APNs or GCM, do not guarantee the delivery of messages to mobile devices.
 
-Now that you are familiar with the basics of Red Hat JBoss Unified Push Server, it is time for the link:../server-installation[Installation and configuration] part!
+Now that you are familiar with the basics of the Red Hat JBoss Unified Push Server, it is time for the link:../server-installation[Installation and configuration] part!
